@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\models",
+    "\\public",
+    "\\public\\css",
+    "\\public\\images",
+    "\\views",
+    "\\views\\places"
+  ],
+  "SelectedNode": "\\views\\home.jsx",
+  "PreviewInSolutionExplorer": false
+}
