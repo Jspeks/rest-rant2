@@ -1,6 +1,7 @@
 require('dotenv').config()
 // Require needed modules.
 const express = require('express')
+const methodOverride = require('method-override')
 
 // Initialize the app object.
 const app = express()
@@ -12,6 +13,7 @@ app.engine('jsx', require('express-react-views').createEngine())
 //calls your static folder
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
+app.use(methodOverride('_method'))
 
 //import the router
 app.use('/places', require('./controllers/places'))
