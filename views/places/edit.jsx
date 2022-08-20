@@ -6,28 +6,34 @@ function edit_form (data) {
         <Def>
           <main>
             <h1>Edit Place</h1>
-			<form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
-  <div>
+			<form method="POST" action={`/places/${data.id}?_method=PUT`}>
+  <div className="row">
+    <div className="form-group col-sm-6">
     <label htmlFor="name">Place Name</label>
-    <input id="name" name="name" value={data.place.name} required />
+    <input 
+    id="name" 
+    name="name" 
+    value={data.place.name} 
+    required />
   </div>
-  <div>
+  <div className="form-group col-sm-6">
     <label htmlFor="pic">Place Picture</label>
     <input type="url" id="pic" name="pic" />
   </div>
-  <div>
+  <div className="form-group col-sm-6">
     <label htmlFor="city">City</label>
     <input id="city" name="city" />
   </div>
-  <div>
+  <div className="form-group col-sm-6">
     <label htmlFor="state">State</label>
     <input id="state" name="state" />
   </div>
-  <div>
+  <div className="form-group col-sm-6">
     <label htmlFor="cuisines">Cuisines</label>
     <input id="cuisines" name="cuisines" required />
   </div>
   <input type="submit" value="Add Place" />
+</div>
 </form>
 
           </main>
